@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<title>Contactos</title>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<style>
+		body {
+			background-color:
+			steelblue;
+			color:white;
+			margin: 0;
+		}
+		
+		h1 {
+			text-align: center;
+			font-size:200%;
+		}
+		
+			/* Modifica el header */
+		.header {
+			background-color: #3C474D;
+			padding: 20px;
+			text-align: center;
+		}
+		img.derecha {
+			float: right;
+		}
+		img.izquierda {
+			float: left;
+		}
+			/* Modifica la barra de navegación */
+		.topnav {
+			overflow: hidden;
+			background-color:#3C474D;
+		}
+			/* Modifica los links de la barra */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+			/* Cambia el color de la casilla */
+		.topnav a:hover {
+			background-color:lightsteelblue;
+			color: steelblue;
+		}
+		 </style>
+	</head>
+	<body>
+		<div class="header">
+		<img src="images/logo.png" width="900px" height="300px" alt="Encabezado">
+		</div>
+
+		<div class="topnav">
+			<a href="index.html">Inicio</a>
+			<a href="info.html">¿Quiénes somos?</a>
+			<a href="script.html">Script</a>
+			<a href="referencias.html">Referencias</a>
+			<a href="contactos.html">Contactos</a>
+		</div>
+		<br>
+		<h1>Contáctanos</h1>
+		<hr>
+		<br>
+		<p>
+		<h1 style="color:white;font-size:130%">Aquí puede realizar un breve formulario a modo de feedback y aportarnos su opinión acerca de su experiencia en nuestra web</h1>
+		<br><br>
+		<a style="font-size:110%">Para enviar este formulario es necesario que rellene los campos requeridos.</a>
+		<ul style="color:white;font-size:100%">
+			<li>Su nombre y sus apellidos, para poder identificarle.</li>
+			<li>Su e-mail, para poder ponernos en contacto con usted.</li>
+			<li>Información sobre su experiencia con nosotros.</li>
+		</ul>  
+		<br>
+		<fieldset style="background-color:antiquewhite;color:steelblue">
+			<legend style="font-size:120%;color:black"><b>Indiquenos sus datos</b></legend>
+			<form action="php\info.php" method="post">
+			<br>
+			Nombre <br>
+			<input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre" maxlength="15" size="20" required>
+			<br>
+			Apellidos <br>
+			<input type="text" name="apellidos" id="apellidos" placeholder="Introduzca sus apellidos" maxlength="25" size="30" required>
+			<br>
+			Correo <br>
+			<input type="email" name="correo" id="correo" placeholder="Introduzca su e-mail" maxlength="35" size="40" required>
+			<br><br>
+			Alguna sugerencia para futuros scripts que desearía aprender con nosotros.. <br>
+			<textarea name="texto" rows="4" cols="40" placeholder="Escriba aquí..." required></textarea>
+			<br>
+			<br>
+			<input type="submit" value="Enviar" /> <input type="reset" value="Borrar datos"/>
+		</form>
+		</fieldset>
+		</p>
+		
+		<br>
+		<hr>
+		<footer>
+		<i>Copyright &copy; 2018</i> &nbsp; &nbsp;
+		</footer>
+	</body>
+</html>
